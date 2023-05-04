@@ -19,7 +19,7 @@
     <div class="flex justify-center bg-blue-900/50 backdrop-blur-lg text-white sticky top-0  z-40">
         <nav class="self-center w-full max-w-7xl  animate__animated animate__fadeInDown">
             <div class="flex md:flex-row flex-col  justify-between items-center md:items-start">
-                <h1 class=" py-4 text-2xl font-mono font-bold px-10">JRD</h1>
+                <h1 class=" py-4 text-2xl font-mono font-bold px-10" href="#main" id="mainid"><a href="#main" id="mainid"> JRD</a></h1>
                 <ul class="flex justify-center my-4  items-center text-sm md:text-[18px] font-bold  md:px-10">
                     <li
                       class="decoration-2 decoration-white py-2 rounded-lg px-2 md:px-5">
@@ -58,7 +58,7 @@
     </div>
     <div>
     
-    <div class="flex justify-center  bg-blue-900 p-5 md:p-16 lg:p-28">
+    <div class="flex justify-center  bg-blue-900 p-5 md:p-16 lg:p-28" id="main">
         <div class="flex flex-col text-center justify-center items-center max-w-7xl  text-white  animate__animated animate__fadeIn animate__delay-1s">
                 &nbsp; </span>
                <img src="image/jai.png" alt="" class="h-14  border-4 border-cyan-500 hover:scale-110 transition-all duration-300 rounded-full shadow-xl shadow-cyan-500/30">
@@ -76,6 +76,10 @@
                 <p class="m-4 text-sm md:w-[80%] tracking-wide leading-7 text-justify">I am currently pursuing my Bachelor's degree in Computer Science and Engineering, with a strong focus on the study of data structures, algorithms, and optimization. As a programmer, I relish taking on challenges and enjoy being a part of the solution. I am curious, a quick learner, and possess a creative approach to problem-solving and coding. I am eager to gain exposure to various domains within the field of computer science that offer intellectually stimulating work, so that I may expand my knowledge and hone my skills.</p>
             </div>
              <script>
+              document.getElementById("mainid").addEventListener("click", function() {
+                var targetSection = document.getElementById("main");
+                targetSection.scrollIntoView({behavior: "smooth", block: "start"});
+              });
                 document.getElementById("scroll-button").addEventListener("click", function() {
                   var targetSection = document.getElementById("Projects");
                   targetSection.scrollIntoView({behavior: "smooth", block: "start"});
