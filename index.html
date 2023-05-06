@@ -22,32 +22,32 @@
                 <h1 class=" py-4 text-2xl font-mono font-bold px-10" href="#main" id="mainid"><a href="#main" id="mainid"> JRD</a></h1>
                 <ul class="flex justify-center my-4  items-center text-sm md:text-[18px] font-bold  md:px-10">
                     <li
-                      class="decoration-2 decoration-white py-2 rounded-lg px-2 md:px-5">
-                        <a href="#Projects" id="scroll-button" class="relative hover:underline transition-all duration-300">
-                          <span class="absolute bottom-0 left-0 w-0 hover:h-0.5 bg-white hover:transition-all duration-300"></span>Projects</a>
+                      class="decoration-2 decoration-white py-2 rounded-lg px-2 md:px-5 hover:animate-pulse">
+                        <a href="#Projects" id="scroll-button" class="relative">
+                          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white hover:transition-all duration-300"></span>Projects</a>
                     </li>
                     <li
-                        class=" decoration-2 decoration-white py-2 rounded-lg px-2 md:px-5">
-                        <a href="#Achievements" id="scroll" class="relative hover:underline transition-all duration-300">
-                          <span class="absolute bottom-0 left-0 w-0 hover:h-0.5 bg-white hover:transition-all duration-300"></span>
+                        class=" decoration-2 decoration-white py-2 rounded-lg px-2 md:px-5 hover:animate-pulse">
+                        <a href="#Achievements" id="scroll" class="relative ">
                           Achievements</a>
+                          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300"></span>
                     </li>
                     <li
-                        class="decoration-2 decoration-white py-2 rounded-lg px-2 md:px-5">
-                        <a href="#Coding" id="code" class="relative hover:underline transition-all duration-300">
-                          <span class="absolute bottom-0 left-0 w-0 hover:h-0.5 bg-white hover:transition-all duration-300"></span>
+                        class="decoration-2 decoration-white py-2 rounded-lg px-2 md:px-5 hover:animate-pulse">
+                        <a href="#Coding" id="code" class="relative">
+                          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300"></span>
                           Coding Platforms</a>
                     </li>
                     <li
-                        class=" decoration-2 decoration-white py-2 rounded-lg px-2 md:px-5">
-                        <a href="#Skill" id="skills" class="relative hover:underline transition-all duration-300">
-                          <span class="absolute bottom-0 left-0 w-0 hover:h-0.5 bg-white transition-all duration-300"></span>
+                        class=" decoration-2 decoration-white py-2 rounded-lg px-2 md:px-5 hover:animate-pulse">
+                        <a href="#Skill" id="skills" class="relative">
+                          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300"></span>
                           Skills</a>
                     </li>
                     <li
-                        class=" decoration-2 decoration-white py-2 rounded-lg px-2 md:px-5">
-                        <a href="#Contact" id="conc" class="relative hover:underline transition-all duration-300">
-                          <span class="absolute bottom-0 left-0 w-0 hover:h-0.5 bg-white hover:transition-all duration-300"></span>
+                        class=" decoration-2 decoration-white py-2 rounded-lg px-2 md:px-5 hover:animate-pulse">
+                        <a href="#Contact" id="conc" class="relative">
+                          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300"></span>
                           Contact</a>
                     </li>
 
@@ -61,12 +61,26 @@
     <div class="flex justify-center  bg-blue-900 p-5 md:p-16 lg:p-28" id="main">
         <div class="flex flex-col text-center justify-center items-center max-w-7xl  text-white  animate__animated animate__fadeIn animate__delay-1s">
                 &nbsp; </span>
-               <img src="image/jai.png" alt="" class="h-14  border-4 border-cyan-500 hover:scale-110 transition-all duration-300 rounded-full shadow-xl shadow-cyan-500/30">
+               <img src="image/jai.png" alt="" id="myimg" class="h-14 border-4 border-cyan-500  transition-all duration-300 rounded-full shadow-xl shadow-cyan-500/30">
             <style>
                 .h-14 {
                     height: 33.5rem;
                     width: auto;
                 }
+                #myimg{  
+                  animation-name: floating;
+                  animation-duration: 3s;
+                  animation-iteration-count: infinite;
+                  animation-timing-function: ease-in-out;
+                  margin-left: 30px;
+                  margin-top: 5px;
+              }
+              
+              @keyframes floating {
+                  from { transform: translate(0,  0px); }
+                  65%  { transform: translate(0, 15px); }
+                  to   { transform: translate(0, -0px); }    
+              }
             </style>
             <div class="flex flex-col text-white mt-5">
                 <h1 class="text-4xl md:text-[50px] font-semibold">Hello I'm Jayasurya R D</h1>
@@ -126,7 +140,7 @@
             <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HTML/CSS(TAILSWIND)  JAVASCRIPT  PHP  MYSQL</h2></div>
               <br>
             <a href="https://github.com/jayasuryard31/College-club-membership-management-system"  target="_blank" class="text-white"> <i
-                class="fa-brands fa-github bg-blue-600 hover:text-black hover:bg-blue-300 rounded-full px-[10px] py-[11px] w-9 h-9 text-center  hover:scale-125 transition-all duration-300"></i>
+                class="fa-brands fa-github bg-blue-600 hover:text-black hover:bg-blue-300 rounded-full px-[10px] py-[11px] w-9 h-9 text-center hover:animate-pulse  hover:scale-125 transition-all duration-300"></i>
             </a><br>
             <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
         </div>
@@ -160,7 +174,7 @@
                           class="flex items-center justify-center md:flex-row flex-col space-x-4 space-y-4 p-2"
                         >
                           <div
-                            class="flex-col px-6 py-2 items-center shadow-xl rounded-2xl hover:scale-105 w-[90%] md:w-1/4 bg-blue-100 hover:bg-red-500 transition-all duration-300" 
+                            class="flex-col px-6 py-2 items-center shadow-xl rounded-2xl hover:scale-105 w-[90%] md:w-1/4 bg-blue-100 hover:bg-red-500 transition-all duration-300 hover:animate-pulse" 
                           > <a href="https://www.codechef.com/users/jayasurya_rd31" target="_blank">
                             <div
                               class="h-40 w-40 border-2 my-3 border-cyan-500 rounded-full overflow-hidden bg-gray-200"
@@ -174,7 +188,7 @@
                         </a>
                           </div>
                           <div
-                            class="flex-col px-6 py-2 shadow-xl rounded-2xl hover:scale-105 w-[90%] md:w-1/4 bg-blue-100 hover:bg-green-500 transition-all duration-300"
+                            class="flex-col px-6 py-2 shadow-xl rounded-2xl hover:scale-105 w-[90%] md:w-1/4 bg-blue-100 hover:bg-green-500 transition-all duration-300 hover:animate-pulse"
                           >
                             <div
                               class="h-40 w-40 my-3 border-2 border-cyan-500 rounded-full overflow-hidden bg-gray-200"
@@ -200,7 +214,7 @@
                             </div></a>
                           </div> -->
                           <div
-                            class="flex-col px-6 py-2 shadow-xl rounded-2xl hover:scale-105 w-[90%] md:w-1/4 bg-blue-100 hover:bg-yellow-500 transition-all duration-300"
+                            class="flex-col px-6 py-2 shadow-xl rounded-2xl hover:scale-105 w-[90%] md:w-1/4 bg-blue-100 hover:bg-yellow-500 transition-all duration-300 hover:animate-pulse"
                           >
                             <div
                               class="h-40 w-40 my-3 border-2 border-cyan-500 rounded-full  overflow-hidden bg-gray-200"
@@ -213,7 +227,7 @@
                             </div></a>
                           </div>
                           <div
-                            class="flex-col px-6 py-2 shadow-xl rounded-2xl hover:scale-105 w-[90%] md:w-1/4 bg-blue-100 hover:bg-orange-500 transition-all duration-300"
+                            class="flex-col px-6 py-2 shadow-xl rounded-2xl hover:scale-105 w-[90%] md:w-1/4 bg-blue-100 hover:bg-orange-500 transition-all duration-300 hover:animate-pulse"
                           >
                             <div
                               class="h-40 w-40 my-3 border-2 border-cyan-500 rounded-full  overflow-hidden bg-gray-200"
